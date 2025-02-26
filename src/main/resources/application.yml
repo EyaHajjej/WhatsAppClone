@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url:jdbc: postgresql://localhost:5432/whatsapp_clone
+    url: jdbc:postgresql://localhost:5432/whatsapp_clone
     username: username
     password: password
   jpa:
@@ -24,11 +24,13 @@ spring:
   servlet:
     multipart:
       max-file-size: 50MB
+springdoc:
+  default-produces-media-type: application/json
 
 application:
   file:
     uploads:
-      media-output.path: ./uploads
+      media-output-path: ./uploads
 
 
 
